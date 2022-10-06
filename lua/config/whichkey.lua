@@ -120,6 +120,8 @@ local function normal_keymap()
     f = keymap_f,
     p = keymap_p,
 
+    e = { "<Cmd>NvimTreeToggle<CR>", "NvimTree" },
+
     j = {
       name = "Jump",
       a = { "<Cmd>lua require('harpoon.mark').add_file()<Cr>", "Add File" },
