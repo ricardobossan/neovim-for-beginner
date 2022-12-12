@@ -18,6 +18,13 @@ function M.setup()
   dap.configurations.cs = {
     {
       type = "coreclr",
+      name = "attach - netcoredbg",
+      request = "attach",
+      processId = require("dap.utils").pick_process,
+      args = {},
+    },
+    {
+      type = "coreclr",
       name = "launch - netcoredbg",
       request = "launch",
       program = function()
