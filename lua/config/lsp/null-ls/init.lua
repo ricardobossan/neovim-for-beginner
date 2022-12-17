@@ -31,7 +31,7 @@ local sources = {
   -- with_root_file(b.formatting.stylua, "stylua.toml"),
 
   -- diagnostics
-  b.diagnostics.write_good,
+  --b.diagnostics.write_good,
   -- b.diagnostics.markdownlint,
   b.diagnostics.eslint_d,
   b.diagnostics.flake8.with { extra_args = { "--max-line-length=180" } },
