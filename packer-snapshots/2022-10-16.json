@@ -485,6 +485,9 @@
   "markdown-preview.nvim": {
     "commit": "02cc387"
   },
+  "markdown-vim": {
+    "commit": "df4be86"
+  },
   "nvim-web-devicons": {
     "commit": "a8cf88c"
   },

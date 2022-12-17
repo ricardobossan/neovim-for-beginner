@@ -521,6 +521,9 @@ function M.setup()
 
     -- Markdown
     use {
+      "preservim/vim-markdown"
+    }
+    use {
       "iamcco/markdown-preview.nvim",
       opt = true,
       run = function()
