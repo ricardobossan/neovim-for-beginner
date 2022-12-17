@@ -15,7 +15,7 @@ function M.setup(servers, server_options)
   }
 
   require("mason-tool-installer").setup {
-    ensure_installed = { "codelldb", "stylua", "shfmt", "shellcheck", "prettierd" },
+    ensure_installed = { "omnisharp", "codelldb", "stylua", "shfmt", "shellcheck", "prettierd" },
     auto_update = false,
     run_on_start = true,
   }
