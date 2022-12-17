@@ -52,3 +52,9 @@ api.nvim_create_autocmd("BufEnter", { command = [[set formatoptions-=cro]] })
 
 -- Fix highlight issue
 api.nvim_create_autocmd("BufEnter", { command = [[syntax enable]] })
+-- Generic autocommands bellow 
+api.nvim_create_autocmd("FileType", { pattern = "markdown", command = [[set conceallevel=3]] })
+--api.nvim_create_autocmd("BufEnter", { command = [[set foldmethod=indent]] })
+api.nvim_create_autocmd("BufEnter", { command = [[set foldlevel=1]] })
+api.nvim_create_autocmd("BufEnter", { command = [[set wrap linebreak]] })
+
