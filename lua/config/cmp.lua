@@ -56,6 +56,21 @@ function M.setup()
   local neogen = require "neogen"
   local cmp = require "cmp"
 
+  -- Remove the rg mapping for markdown files
+  if vim.bo.filetype == markdown then
+    sources = {
+      function(...)
+        local items = { rg(...) }
+        for i = #items, 1, -1 do
+          if items[i].source.name == rg then
+            table.remove(items, i)
+          end
+        end
+        return items
+      end,
+    }
+  end
+
   cmp.setup {
     completion = { completeopt = "menu,menuone,noinsert", keyword_length = 1 },
     -- experimental = { native_menu = false, ghost_text = false },
